@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+}
+
+.logo {
+    width: 168px;
+    height: 40px;
+}
+
+.tamanio-seccion {
+    height: 80vh;
+}
+
+.img-fondo {
+    background-image: url(../imagenes/Portada.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 999999px rgb(0 0 0 / 50%);
+    object-fit: contain;
+}
+
+.tamanio-div {
+    height: 50vh;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.tamanio-seccion2 {
+    height: 100vh;
+}
+
+.btn-publicar {
+    border-radius: 25px;
+    background-color: rgb(45, 94, 237)!important;
+    border: rgb(45, 94, 237)!important;
+    color: #fff;
+}
+
+.btn-publicar:hover {
+    color: #fff!important;
+    background-color: rgb(15, 64, 211)!important;;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.text-secondary:hover {
+    color: black!important;
+}
+
+/* Boton Busqueda */
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+    border-radius: 30px;
+}
+
+.search input:focus {
+    box-shadow: none;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: rgb(45, 94, 237);
+    border-radius: 30px;
+}
+
+.ancho-search {
+    width: 130vh;
+}
+
+/* Cards */
+.cards-tamanio {
+    width: 22rem;
+}
+
+.cards-tamanio:hover {
+    filter:  drop-shadow(16px 16px 20px rgb(45, 94, 237));
+    transform: scale(1.1);
+    transition: transform 0.9s;
+}
+
+.color-textoCard {
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+.top2 {
+    margin-top: 100px;
+}
+
+
+/* Iconos */
+.top  {
+    margin-top: 150px;
+}
+
+.centrar-iconos {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Animacion iconos */ 
+
+.icono-wp:hover {   
+    color:  rgb(21, 166, 21)!important;
+    transform: scale(1.2);
+}
+
+.icono-insta:hover {   
+    color:  rgb(221,42,123)!important;
+    transform: scale(1.2);
+}
+
+.icono-face:hover {   
+    color:  rgb(37, 123, 177)!important;
+    transform: scale(1.2);
+}
+
+
+/* Menu hamburguesa */
+
+.hide {
+    display: none;
+}
