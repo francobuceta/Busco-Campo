@@ -12,6 +12,10 @@ header {
     height: 40px;
 }
 
+.fuente-titulo {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .tamanio-seccion {
     height: 80vh;
 }
@@ -96,17 +100,13 @@ header {
 
 /* Cards */
 .cards-tamanio {
-    width: 22rem;
+    width: 75rem;
 }
 
 .cards-tamanio:hover {
     filter:  drop-shadow(16px 16px 20px rgb(45, 94, 237));
     transform: scale(1.1);
     transition: transform 0.9s;
-}
-
-.color-textoCard {
-    background-color: rgba(51, 51, 51, 0.9);
 }
 
 .top2 {
@@ -123,6 +123,17 @@ header {
     display: block;
     margin: auto;
     padding: 10px;
+}
+
+.alinear-botones {
+    position: relative;
+    min-height: 300px;
+}
+
+.boton-alineado {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 100px;
 }
 
 /* Animacion iconos */ 
@@ -146,6 +157,11 @@ header {
     background-color: rgb(216, 231, 240);
 }
 
+
+.acomodarNav {
+    display: flex!important;
+    justify-content: flex-start!important;
+}
 
 /* Menu hamburguesa */
 .panel {
@@ -221,12 +237,37 @@ header {
         display: flex;
         justify-content: center;
     }
+
+    .boton-alineado {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 768px) {
     .card-responsive {
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .footer-responsive {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .centrado-responsive {
+        text-align: center;
+    }
+
+    .alinear-botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+    }
+    
+    .boton-alineado {
+        position: static;
     }
 }
 
@@ -238,17 +279,9 @@ header {
     .mostrar {
         display: none!important;
     }
-}
 
-@media (max-width: 632px) {
     .search button {
         width: 80px;
-    }
-
-    .footer-responsive {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
     }
 }
 
