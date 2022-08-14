@@ -161,6 +161,7 @@ header {
 .acomodarNav {
     display: flex!important;
     justify-content: flex-start!important;
+    left: 100px;
 }
 
 /* Menu hamburguesa */
@@ -247,6 +248,10 @@ header {
     .card-responsive {
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .cards-tamanio {
+        width: fit-content;
     }
 
     .footer-responsive {
