@@ -62,29 +62,29 @@ header {
 }
 
 /* Boton Busqueda */
-.search {
+#search {
     position: relative;
     box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
 }
 
-.search input {
+#search input {
     height: 60px;
     text-indent: 25px;
     border: 2px solid #d6d4d4;
     border-radius: 30px;
 }
 
-.search input:focus {
+#search input:focus {
     box-shadow: none;
 }
 
-.search .fa-search {
+#search .fa-search {
     position: absolute;
     top: 20px;
     left: 16px;
 }
 
-.search button {
+#search button {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -96,6 +96,35 @@ header {
 
 .ancho-search {
     width: 130vh;
+}
+
+#cuadro-de-busquedas {
+    position: absolute;
+    left: 45%;
+    top: inherit;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: inherit;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+    list-style: none;
+}
+
+#cuadro-de-busquedas li a {
+    display: block;
+    width: 400px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+
+#cuadro-de-busquedas li a:hover {
+    background: rgb(145, 162, 214);
+}
+
+#cuadro-de-busquedas li a i {
+    margin-right: 12px;
 }
 
 /* Cards */
@@ -242,6 +271,10 @@ header {
     .boton-alineado {
         margin-left: 0;
     }
+
+    #cuadro-de-busquedas {
+        width: 400px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -274,6 +307,10 @@ header {
     .boton-alineado {
         position: static;
     }
+
+    #cuadro-de-busquedas {
+        width: 280px;
+    }
 }
 
 @media (max-width: 632px) {
@@ -289,6 +326,20 @@ header {
         width: 80px;
     }
 }
+
+@media (max-width: 360px) {
+    .ancho-search {
+        width: 570px!important;
+    }
+
+    .btn-search {
+        width: 80px!important;
+    }
+
+    #cuadro-de-busquedas {
+        width: 190px;
+    }
+} 
 
 
 
